@@ -12,6 +12,7 @@ const util = require('util');
 // Set 'browserstack.local:true For Local testing
 const caps = {
   browser: 'chrome',
+  browser_version: 'latest',
   os: 'osx',
   os_version: 'catalina',
   name: 'My first playwright test',
