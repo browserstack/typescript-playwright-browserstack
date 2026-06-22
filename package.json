@@ -12,6 +12,6 @@
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.29.1",
-    "browserstack-local": "^1.5.1"
+    "browserstack-local": "^1.5.9"
   }
 }
