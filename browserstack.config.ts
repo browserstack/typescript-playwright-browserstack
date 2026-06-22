@@ -12,6 +12,7 @@ const util = require('util');
 // Set 'browserstack.local:true For Local testing
 const caps = {
   browser: 'chrome',
+  browser_version: 'latest',
   os: 'osx',
   os_version: 'catalina',
   name: 'My first playwright test',
@@ -38,7 +39,7 @@ const patchCaps = (name, title) => {
   let os = osCapsSplit.shift();
   let os_version = osCapsSplit.join(' ');
   caps.browser = browser ? browser : 'chrome';
-  caps.os_version = browser_version ? browser_version : 'latest';
+  caps.browser_version = browser_version ? browser_version : 'latest';
   caps.os = os ? os : 'osx';
   caps.os_version = os_version ? os_version : 'catalina';
   caps.name = title;
